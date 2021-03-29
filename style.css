@@ -11,82 +11,84 @@ body {
 
 /* Add styles here! */
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding-top: 96px;
+  padding-bottom: 32px;
 }
 
 strong {
   color: hsl(160deg, 100%, 30%);
 }
 
-.intro-chunk {
+header {
   border-style: solid;
-  border-width: 8px;
+  border-width: 4px;
   border-color: hsl(0deg, 0%, 40%);
   border-top: 0;
   border-left: 0;
   border-right: 0;
 }
 
-main .max-width-wrapper {
-  background-color: hsl(0deg, 0%, 60%);
+header .max-width-wrapper {
+  background-color: hsl(0deg, 0%, 100%);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.indented-heading {
-  font-weight: 600;
-  background-color: hsl(45deg, 100%, 50%);
+.intro-chunk {
+  font-size: 1.25rem;
+  padding-bottom: 32px;
+  max-width: 300px;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 60%);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.card {
+  margin-top: 32px;
+}
+
+main .max-width-wrapper {
+  background-color: hsl(0deg, 0%, 100%);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
   border-style: solid;
-  border-width: 8px;
-  border-color: hsl(45deg, 100%, 40%);
+  border-width: 4px;
+  border-color: hsl(0deg, 0%, 40%);
   border-top: 0;
   border-left: 0;
   border-right: 0;
 }
 
-/* Spacing
-This app uses an 8px unit. All spaces are a multiple of 8px:
+.indented-heading {
+  font-weight: 600;
+  font-size: 1.25rem;
+  background-color: hsl(45deg, 100%, 50%);
+  border-style: solid;
+  border-width: 4px;
+  border-color: hsl(45deg, 100%, 40%);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: -24px;
+  margin-top: 8px;
+  width: fit-content;
+  display: inline-block;
+}
 
-8px
-16px
-24px
-32px
-48px
-64px
-96px
-128px
-When it comes to max widths (eg. the maximum width of the card), arbitrary values can be used.
-
-
-
-Font
-1 font is used in this project: Lato. It is already included in the stylesheet.
-
-For font sizes, the rem unit should be used.
-
-The scale is:
-
-1rem
-1.25rem
-1.5rem
-2rem
-Because the base font size is 18px, this works out in pixels to:
-
-18px
-22.5px
-27px
-36px
-Color palette
-Primary (green):
-
-hsl(160deg, 100%, 30%)
-Secondary (gold):
-
-hsl(45deg, 100%, 50%) (lighter)
-hsl(45deg, 100%, 40%) (darker)
-Grays:
-
-hsl(0deg, 0%, 0%) (black)
-hsl(0deg, 0%, 10%) (very dark)
-hsl(0deg, 0%, 30%) (dark)
-hsl(0deg, 0%, 40%) (medium)
-hsl(0deg, 0%, 60%) (light)
-hsl(0deg, 0%, 100%) (white) */
+.card p {
+  margin-top: 0px;
+}
